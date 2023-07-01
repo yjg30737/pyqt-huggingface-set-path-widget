@@ -121,9 +121,6 @@ class FindPathWidget(QWidget):
         self.__settings_struct.setValue('CACHE_DIR', os.path.normpath(self.__cache_dir))
         self.onCacheDirSet.emit(self.__settings_struct.value('CACHE_DIR'))
 
-    def setLabel(self, text):
-        self.layout().insertWidget(0, QLabel(text))
-
     def getCacheDirectory(self):
         return self.__pathLineEdit.text()
 
