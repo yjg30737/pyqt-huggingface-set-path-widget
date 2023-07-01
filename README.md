@@ -3,7 +3,7 @@ PyQt widget designed to conveniently set up a cache directory for storing Huggin
 
 When you are concerned about hard disk space or want to save models in a specific directory, this widget allows you to manage the cache directory in a GUI manner. The default value is TRANSFORMERS_CACHE (the default path where Hugging Face models are downloaded), but you can change it to your preferred location.
 
-The modified path is saved in an ini file, and if you want to revert to the default value, simply click the reset button. You can also open the file from the input field's context menu by right-clicking, which will allow you to navigate to the desired location.
+You can also open the file from the input field's context menu by right-clicking, which will allow you to navigate to the desired location.
 
 This is directly used in <a href="https://github.com/yjg30737/huggingface_gui.git">huggingface_gui</a>. 
 
@@ -15,6 +15,14 @@ This is directly used in <a href="https://github.com/yjg30737/huggingface_gui.gi
 1. git clone ~
 2. pip install -r requirements.txt
 3. python main.py
+
+## Method & Signal Overview
+### Signal
+* findClicked
+* onCacheDirSet
+### Method 
+* resetCacheDir
+* getCacheDirectory
 
 ## Preview
 ![image](https://github.com/yjg30737/pyqt-huggingface-set-path-widget/assets/55078043/7244d807-5208-4813-bc12-4729ba7d0d40)
