@@ -5,7 +5,7 @@ When you are concerned about hard disk space or want to save models in a specifi
 
 The modified path is saved in an ini file, and if you want to revert to the default value, simply click the reset button. You can also open the file from the input field's context menu by right-clicking, which will allow you to navigate to the desired location.
 
-This is using in my numerous HuggingFace-related applications such as <a href="https://github.com/yjg30737/huggingface_gui.git">huggingface_gui</a>. 
+This is directly used in <a href="https://github.com/yjg30737/huggingface_gui.git">huggingface_gui</a>. 
 
 ## Requirements
 * PyQt5 >= 5.14
